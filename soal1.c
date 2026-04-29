@@ -68,7 +68,7 @@ int main(){
                 swap(&x[j], &x[j+1]);
             }else if(strcmp(x[j].kategori, x[j+1].kategori)==0 && (x[j].tahun > x[j+1].tahun)){
                 swap(&x[j], &x[j+1]);
-            }else if(strcmp(x[j].kategori, x[j+1].kategori)==0  && (x[j].tahun > x[j+1].tahun) && (x[j].nilai < x[j+1].nilai)){
+            }else if(strcmp(x[j].kategori, x[j+1].kategori)==0  && (x[j].tahun == x[j+1].tahun) && (x[j].nilai < x[j+1].nilai)){
                 swap(&x[j], &x[j+1]);
             }else if(strcmp(x[j].kategori, x[j+1].kategori)==0  && (x[j].tahun == x[j+1].tahun) && (x[j].nilai == x[j+1].nilai) && strcmp(x[j].nama, x[j+1].nama)>0){
                 swap(&x[j], &x[j+1]);
