@@ -65,9 +65,7 @@ int main(){
         for (int j = 0; j < N - i - 1; j++)
         {
             if (strcmp(x[j].kategori, x[j+1].kategori)>0){
-                printf("%s %s %d %d\n", x[j].nama, x[j].kategori, x[j].tahun, x[j].nilai);
                 swap(&x[j], &x[j+1]);
-                printf("%s %s %d %d\n", x[j].nama, x[j].kategori, x[j].tahun, x[j].nilai);
             }else if(strcmp(x[j].kategori, x[j+1].kategori)==0 && (x[j].tahun > x[j+1].tahun)){
                 swap(&x[j], &x[j+1]);
             }else if(strcmp(x[j].kategori, x[j+1].kategori)==0  && (x[j].tahun > x[j+1].tahun) && (x[j].nilai < x[j+1].nilai)){
