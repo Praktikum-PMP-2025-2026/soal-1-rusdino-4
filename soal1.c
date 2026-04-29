@@ -75,7 +75,6 @@ int main(){
             }
         }
     }
-    printf("pembatas\n");
     for (int i = 0; i < N; i++)
     {
         printf("%s %s %d %d\n", x[i].nama, x[i].kategori, x[i].tahun, x[i].nilai);
